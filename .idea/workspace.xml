@@ -7,44 +7,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae410b0e-9622-48c0-acc4-331db2cabe56" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/framework_web_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/framework_web_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/nemo-framework.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/nemo/framework/common/utils/CollectionUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/nemo/framework/common/utils/ExceptionUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/nemo/framework/common/utils/MapUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/nemo/framework/common/utils/ReflectUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/nemo/framework/common/utils/StringUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/nemo/framework/core/NemoFrameworkCore.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/nemo/framework/core/enums/NemoFramworkCorePropertiesNameEnums.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/nemo/framework/core/init/NemoFrameworkCorePackageScaner.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/nemo/framework/core/route/bean/RouteBean.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/nemo/framework/core/route/manager/DeleteRouters.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/nemo/framework/core/route/manager/GetRouters.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/nemo/framework/core/route/manager/PostRouters.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/nemo/framework/core/route/manager/PutRouters.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/nemo/framework/core/route/manager/Routers.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/nemo/framework/core/utils/NemoFrameworkAnnotationUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/nemo/framework/core/utils/NemoFrameworkCacheUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/nemo/framework/core/utils/NemoFrameworkExecuteMethodUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/nemo/framework/core/utils/NemoFrameworkParameterUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/nemo/framework/core/utils/NemoFrameworkPropertiesUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/nemo/framework/core/utils/NemoFrameworkUrlUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/nemo/framework/mvc/annotation/Controller.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/nemo/framework/mvc/annotation/RespBody.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/nemo/framework/mvc/annotation/UrlMapping.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/nemo/framework/mvc/enums/MappingMethod.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/nemo/framework/mvc/enums/NemoFramworkMvcPropertiesNameEnums.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/nemo/framework/mvc/servlet/NemoMvcFrameworkCoreServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/nemo/framework/test/controller/IndexController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/nemo/framework/test/controller/UserController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/nemo.framework.application.properties" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core/context/NemoContext.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework-mvc/src/main/java/com/nemo/framework/mvc/template/ViewEngine.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework-mvc/src/main/java/com/nemo/framework/mvc/template/ViewEngineImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework-core/target/classes/com/nemo/framework/common/enums/NemoFramworkMvcPropertiesNameEnums.class" afterPath="$PROJECT_DIR$/framework-core/target/classes/com/nemo/framework/common/enums/NemoFramworkMvcPropertiesNameEnums.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework-core/target/classes/com/nemo/framework/core/NemoFrameworkCore.class" afterPath="$PROJECT_DIR$/framework-core/target/classes/com/nemo/framework/core/NemoFrameworkCore.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework-core/target/classes/com/nemo/framework/core/utils/NemoFrameworkExecuteMethodUtils.class" afterPath="$PROJECT_DIR$/framework-core/target/classes/com/nemo/framework/core/utils/NemoFrameworkExecuteMethodUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework-mvc/target/classes/com/nemo/framework/mvc/servlet/NemoMvcFrameworkCoreServlet.class" afterPath="$PROJECT_DIR$/framework-mvc/target/classes/com/nemo/framework/mvc/servlet/NemoMvcFrameworkCoreServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework-web/target/classes/com/nemo/framework/test/controller/IndexController.class" afterPath="$PROJECT_DIR$/framework-web/target/classes/com/nemo/framework/test/controller/IndexController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework-web/target/framework.web-1.0.0/WEB-INF/classes/com/nemo/framework/test/controller/IndexController.class" afterPath="$PROJECT_DIR$/framework-web/target/framework.web-1.0.0/WEB-INF/classes/com/nemo/framework/test/controller/IndexController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework-web/target/framework.web-1.0.0/WEB-INF/lib/framework.core-1.0.0.jar" afterPath="$PROJECT_DIR$/framework-web/target/framework.web-1.0.0/WEB-INF/lib/framework.core-1.0.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework-web/target/framework.web-1.0.0/WEB-INF/lib/framework.mvc-1.0.0.jar" afterPath="$PROJECT_DIR$/framework-web/target/framework.web-1.0.0/WEB-INF/lib/framework.mvc-1.0.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/common/enums/NemoFramworkMvcPropertiesNameEnums.java" afterPath="$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/common/enums/NemoFramworkMvcPropertiesNameEnums.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core/NemoFrameworkCore.java" afterPath="$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core/NemoFrameworkCore.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core/utils/NemoFrameworkExecuteMethodUtils.java" afterPath="$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core/utils/NemoFrameworkExecuteMethodUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework-mvc/src/main/java/com/nemo/framework/mvc/servlet/NemoMvcFrameworkCoreServlet.java" afterPath="$PROJECT_DIR$/framework-mvc/src/main/java/com/nemo/framework/mvc/servlet/NemoMvcFrameworkCoreServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework-web/framework-web.iml" afterPath="$PROJECT_DIR$/framework-web/framework-web.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework-web/src/main/java/com/nemo/framework/test/controller/IndexController.java" afterPath="$PROJECT_DIR$/framework-web/src/main/java/com/nemo/framework/test/controller/IndexController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework-web/src/main/resources/nemo.framework.application.properties" afterPath="$PROJECT_DIR$/framework-web/src/main/resources/nemo.framework.application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework-web/target/classes/nemo.framework.application.properties" afterPath="$PROJECT_DIR$/framework-web/target/classes/nemo.framework.application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework-web/target/framework.web-1.0.0/WEB-INF/classes/nemo.framework.application.properties" afterPath="$PROJECT_DIR$/framework-web/target/framework.web-1.0.0/WEB-INF/classes/nemo.framework.application.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -52,6 +38,7 @@
     <ignored path="$PROJECT_DIR$/framework-core/target/" />
     <ignored path="$PROJECT_DIR$/framework-mvc/target/" />
     <ignored path="$PROJECT_DIR$/framework-web/target/" />
+    <ignored path="$PROJECT_DIR$/test/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,21 +48,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="NemoMvcFrameworkCoreServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework-mvc/src/main/java/com/nemo/framework/mvc/servlet/NemoMvcFrameworkCoreServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="314">
+              <caret line="39" column="41" lean-forward="false" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework-core/pom.xml">
+      <file leaf-file-name="NemoFrameworkExecuteMethodUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core/utils/NemoFrameworkExecuteMethodUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="392">
+              <caret line="54" column="44" lean-forward="true" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -84,43 +73,56 @@
       <file leaf-file-name="NemoFrameworkParameterUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core/utils/NemoFrameworkParameterUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework-mvc/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+            <state relative-caret-position="554">
+              <caret line="90" column="53" lean-forward="true" selection-start-line="90" selection-start-column="53" selection-end-line="90" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NemoMvcFrameworkCoreServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework-mvc/src/main/java/com/nemo/framework/mvc/servlet/NemoMvcFrameworkCoreServlet.java">
+      <file leaf-file-name="NemoContext.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core/context/NemoContext.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="368">
-              <caret line="29" column="38" lean-forward="true" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
+                <element signature="e#0#1552#0" expanded="true" />
                 <element signature="imports" expanded="true" />
+                <element signature="e#387#400#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NemoFrameworkPropertiesUtils.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core/utils/NemoFrameworkPropertiesUtils.java">
+      <file leaf-file-name="ReflectUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/common/utils/ReflectUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="176">
+              <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework-web/src/main/java/com/nemo/framework/test/controller/IndexController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NemoFrameworkCore.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core/NemoFrameworkCore.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1152">
+              <caret line="112" column="7" lean-forward="false" selection-start-line="112" selection-start-column="7" selection-end-line="112" selection-end-column="7" />
+              <folding>
+                <element signature="e#4283#4284#0" expanded="true" />
+                <element signature="e#4347#4348#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -128,8 +130,8 @@
       <file leaf-file-name="nemo.framework.application.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/framework-web/src/main/resources/nemo.framework.application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+            <state relative-caret-position="128">
+              <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -145,27 +147,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework-web/src/main/java/com/nemo/framework/test/controller/UserController.java">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework-web/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NemoFrameworkCorePackageScaner.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core/init/NemoFrameworkCorePackageScaner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="96">
+              <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>农金圈</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>微迈科技</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -180,14 +187,39 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/framework-core/pom.xml" />
-        <option value="$PROJECT_DIR$/framework-web/src/main/resources/nemo.framework.application.properties" />
         <option value="$PROJECT_DIR$/framework-mvc/pom.xml" />
         <option value="$PROJECT_DIR$/framework-web/pom.xml" />
+        <option value="$PROJECT_DIR$/framework-mvc/src/main/java/com/nemo/framework/mvc/template/ViewEng.java" />
+        <option value="$PROJECT_DIR$/framework-mvc/src/main/java/com/nemo/framework/mvc/template/ViewEngine.java" />
+        <option value="$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core/NemoFrameworkCore.java" />
+        <option value="$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core/enums/NemoFramworkCorePropertiesNameEnums.java" />
+        <option value="$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/common/enums/NemoFramworkMvcPropertiesNameEnums.java" />
+        <option value="$PROJECT_DIR$/framework-mvc/src/main/java/com/nemo/framework/mvc/context/NemoMvcFrameworkContext.java" />
+        <option value="$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core/context/NemoMvcFrameworkContext.java" />
+        <option value="$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core/context/NemoFrameworkMvcContext.java" />
+        <option value="$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core/context/NemoMvcContext.java" />
+        <option value="$PROJECT_DIR$/framework-mvc/src/main/java/com/nemo/framework/mvc/context/NemoMvcContext.java" />
+        <option value="$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core/NemoContext.java" />
+        <option value="$PROJECT_DIR$/framework-mvc/src/main/java/com/nemo/framework/mvc/template/ViewEngineImpl.java" />
+        <option value="$PROJECT_DIR$/framework-mvc/src/main/java/com/nemo/framework/mvc/servlet/NemoMvcFrameworkCoreServlet.java" />
+        <option value="$PROJECT_DIR$/framework-mvc/src/main/webapp/WEB-INF/views/index.jsp" />
+        <option value="$PROJECT_DIR$/framework-web/src/main/resources/nemo.framework.application.properties" />
+        <option value="$PROJECT_DIR$/framework-web/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/framework-web/src/main/java/com/nemo/framework/test/controller/IndexController.java" />
+        <option value="$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core/utils/NemoFrameworkExecuteMethodUtils.java" />
+        <option value="$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core/context/NemoContext.java" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -297,6 +329,73 @@
             <path>
               <item name="nemo-framework" type="b2602c69:ProjectViewProjectNode" />
               <item name="nemo-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="framework-core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nemo-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nemo-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="framework-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nemo-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nemo-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="framework-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nemo-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nemo-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="framework-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nemo-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nemo-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="framework-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nemo-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nemo-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="framework-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nemo-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nemo-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="framework-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="context" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nemo-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nemo-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="framework-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nemo-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nemo-framework" type="462c0819:PsiDirectoryNode" />
               <item name="framework-mvc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -344,6 +443,59 @@
               <item name="nemo-framework" type="462c0819:PsiDirectoryNode" />
               <item name="framework-web" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="nemo-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nemo-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="framework-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nemo-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nemo-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="framework-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nemo-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nemo-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="framework-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nemo-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nemo-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="framework-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nemo-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nemo-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="framework-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nemo-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nemo-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="framework-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nemo-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nemo-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="framework-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -356,13 +508,18 @@
     <property name="settings.editor.selected.configurable" value="vcs.Perforce" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../card" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\workpace\workpace01\nemo-framework\framework-web\src\main" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\workpace\workpace01\nemo-framework\framework-web\src\main" />
       <recent name="F:\workpace\workpace01\framework\framework-web\src\main\java" />
       <recent name="F:\workpace\workpace01\framework\framework-mvc\src\main\java" />
       <recent name="F:\workpace\workpace01\framework\framework-core\src\main\java" />
@@ -548,46 +705,47 @@
       <updated>1511945864040</updated>
       <workItem from="1511945867986" duration="43000" />
       <workItem from="1511945931395" duration="865000" />
-      <workItem from="1511946845294" duration="332000" />
+      <workItem from="1511946845294" duration="6556000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1240000" />
+    <option name="totallyTimeSpent" value="7464000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13006397" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39956802" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13006397" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2553305" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39956802" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -598,21 +756,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core/utils/NemoFrameworkPropertiesUtils.java</url>
-          <line>19</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/framework-mvc/src/main/java/com/nemo/framework/mvc/servlet/NemoMvcFrameworkCoreServlet.java</url>
-          <line>30</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -637,9 +781,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -725,28 +867,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core/utils/NemoFrameworkParameterUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/framework-web/src/main/java/com/nemo/framework/test/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-web/src/main/resources/nemo.framework.application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -759,6 +883,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="48">
+            <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core/utils/NemoFrameworkPropertiesUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-mvc/src/main/java/com/nemo/framework/mvc/template/ViewEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core/enums/NemoFramworkCorePropertiesNameEnums.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="12" column="69" lean-forward="false" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/common/enums/NemoFramworkMvcPropertiesNameEnums.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="14" column="59" lean-forward="false" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core/context/NemoMvcFrameworkContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="15" column="79" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core/context/NemoFrameworkMvcContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/framework-mvc/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -767,10 +958,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/framework-mvc/src/main/java/com/nemo/framework/mvc/context/NemoMvcContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="208">
+          <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-mvc/src/main/java/com/nemo/framework/mvc/template/ViewEngineImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="36" column="58" lean-forward="false" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-web/src/main/webapp/WEB-INF/views/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core/NemoFrameworkCore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="112" column="7" lean-forward="false" selection-start-line="112" selection-start-column="7" selection-end-line="112" selection-end-column="7" />
+          <folding>
+            <element signature="e#4283#4284#0" expanded="true" />
+            <element signature="e#4347#4348#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-web/src/main/webapp/js/slick.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="16" column="1492" lean-forward="false" selection-start-line="16" selection-start-column="1492" selection-end-line="16" selection-end-column="1492" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -783,21 +1019,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/framework-web/src/main/resources/nemo.framework.application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-web/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/common/utils/ReflectUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/framework-mvc/src/main/java/com/nemo/framework/mvc/servlet/NemoMvcFrameworkCoreServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="29" column="38" lean-forward="true" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+        <state relative-caret-position="314">
+          <caret line="39" column="41" lean-forward="false" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core/utils/NemoFrameworkPropertiesUtils.java">
+    <entry file="file://$PROJECT_DIR$/framework-web/src/main/java/com/nemo/framework/test/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core/utils/NemoFrameworkExecuteMethodUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="54" column="44" lean-forward="true" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core/utils/NemoFrameworkParameterUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="90" column="53" lean-forward="true" selection-start-line="90" selection-start-column="53" selection-end-line="90" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-core/src/main/java/com/nemo/framework/core/context/NemoContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#1552#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#387#400#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -856,7 +1144,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>framework-mvc</last-edited>
+          <last-edited>framework-web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

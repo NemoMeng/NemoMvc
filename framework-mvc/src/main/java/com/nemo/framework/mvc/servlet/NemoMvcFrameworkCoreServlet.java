@@ -12,6 +12,7 @@ import com.nemo.framework.core.utils.NemoFrameworkPropertiesUtils;
 import com.nemo.framework.core.utils.NemoFrameworkUrlUtils;
 import com.nemo.framework.common.enums.MappingMethod;
 
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -26,8 +27,11 @@ import java.io.IOException;
 @WebServlet(name="/",urlPatterns = "/",loadOnStartup=1)
 public class NemoMvcFrameworkCoreServlet extends HttpServlet {
 
+    private ServletContext context;
+
     @Override
     public void init() throws ServletException {
+        context = getServletContext();
         NemoFrameworkCore core = NemoFrameworkCore.core();
         //如果还未完成初始化，那么则开始扫描包
         if(!core.isInited()){
@@ -45,7 +49,7 @@ public class NemoMvcFrameworkCoreServlet extends HttpServlet {
             super.doGet(request,response);
         }else {
             //开始调用方法
-            NemoFrameworkExecuteMethodUtils.execute(MappingMethod.GET, request, response);
+            NemoFrameworkExecuteMethodUtils.execute(MappingMethod.GET, request, response,context);
         }
     }
 
@@ -55,7 +59,7 @@ public class NemoMvcFrameworkCoreServlet extends HttpServlet {
             super.doPost(request,response);
         }else {
             //开始调用方法
-            NemoFrameworkExecuteMethodUtils.execute(MappingMethod.POST, request, response);
+            NemoFrameworkExecuteMethodUtils.execute(MappingMethod.POST, request, response,context);
         }
     }
 
@@ -65,7 +69,7 @@ public class NemoMvcFrameworkCoreServlet extends HttpServlet {
             super.doDelete(request,response);
         }else {
             //开始调用方法
-            NemoFrameworkExecuteMethodUtils.execute(MappingMethod.DELETE, request, response);
+            NemoFrameworkExecuteMethodUtils.execute(MappingMethod.DELETE, request, response,context);
         }
     }
 
@@ -75,7 +79,7 @@ public class NemoMvcFrameworkCoreServlet extends HttpServlet {
             super.doGet(request,response);
         }else {
             //开始调用方法
-            NemoFrameworkExecuteMethodUtils.execute(MappingMethod.PUT, request, response);
+            NemoFrameworkExecuteMethodUtils.execute(MappingMethod.PUT, request, response,context);
         }
     }
 

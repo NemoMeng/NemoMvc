@@ -15,10 +15,12 @@ import com.nemo.framework.common.enums.MappingMethod;
 public class IndexController {
 
     @UrlMapping(value = "/aaa",method = MappingMethod.GET)
-    public void index(String arg,Integer age){
+    public String index(String arg,Integer age){
         System.out.println("你得到了一个参数arg:" + arg);
         System.out.println("你得到了一个参数age:" + age);
         System.out.println("you are request index");
+
+        return "index";
     }
 
 }

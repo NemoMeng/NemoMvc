@@ -9,6 +9,7 @@ import com.nemo.framework.core.route.manager.DeleteRouters;
 import com.nemo.framework.core.route.manager.GetRouters;
 import com.nemo.framework.core.route.manager.PostRouters;
 import com.nemo.framework.core.route.manager.PutRouters;
+import com.nemo.framework.core.utils.NemoFrameworkPropertiesUtils;
 import com.nemo.framework.core.utils.NemoFrameworkUrlUtils;
 import com.nemo.framework.common.annotation.UrlMapping;
 import com.nemo.framework.common.enums.MappingMethod;
@@ -129,4 +130,14 @@ public class NemoFrameworkCore {
     public void setInited(boolean inited) {
         isInited = inited;
     }
+
+    /**
+     * 得到配置
+     * @param key
+     * @return
+     */
+    public static String getProp(String key){
+        return NemoFrameworkPropertiesUtils.getProp(key);
+    }
+
 }

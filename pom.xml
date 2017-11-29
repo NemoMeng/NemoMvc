@@ -12,6 +12,7 @@
         <module>framework-core</module>
         <module>framework-mvc</module>
         <module>framework-web</module>
+        <module>test</module>
     </modules>
 
 

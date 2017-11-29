@@ -10,7 +10,9 @@ package com.nemo.framework.common.enums;
  */
 public enum NemoFramworkMvcPropertiesNameEnums {
 
-    FRAMEWORK_FILTER_SUFFIX("com.nemo.framework.suffix","框架拦截的后缀名称"),
+    FRAMEWORK_FILTER_SUFFIX("com.nemo.framework.filter.suffix","框架拦截的后缀名称"),
+    FRAMEWORK_VIEW_SUFFIX("com.nemo.framework.view.suffix","框架使用的视图的后缀"),
+    FRAMEWORK_VIEW_PREFFIX("com.nemo.framework.view.preffix","框架使用的视图的位置"),
     ;
     private String value;
     private String remark;

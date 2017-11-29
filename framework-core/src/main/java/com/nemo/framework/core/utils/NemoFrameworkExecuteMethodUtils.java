@@ -4,13 +4,18 @@
  */
 package com.nemo.framework.core.utils;
 
+import com.nemo.framework.common.enums.NemoFramworkMvcPropertiesNameEnums;
 import com.nemo.framework.common.utils.ReflectUtils;
 import com.nemo.framework.core.NemoFrameworkCore;
+import com.nemo.framework.core.context.NemoContext;
 import com.nemo.framework.core.route.bean.RouteBean;
 import com.nemo.framework.common.enums.MappingMethod;
+import jdk.nashorn.internal.runtime.regexp.joni.Config;
 
+import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.File;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
@@ -35,7 +40,17 @@ public class NemoFrameworkExecuteMethodUtils {
             }else {
                 Object[] parameters = NemoFrameworkParameterUtils.getParameters(request, response, obj , method);
                 //return method.invoke(obj, parameters);
-                return ReflectUtils.invokeMehod(obj,method,parameters);
+
+                request.setAttribute("name","Nemo");
+
+                Object object = ReflectUtils.invokeMehod(obj,method,parameters);
+
+                    String path = "/" + NemoFrameworkPropertiesUtils.getProp(NemoFramworkMvcPropertiesNameEnums.FRAMEWORK_VIEW_PREFFIX.getValue())
+                            + File.separator+object.toString()
+                            + NemoFrameworkPropertiesUtils.getProp(NemoFramworkMvcPropertiesNameEnums.FRAMEWORK_VIEW_SUFFIX.getValue());
+                    request.getRequestDispatcher(path).forward(request, response);
+
+                return path;
             }
         } catch (IllegalAccessException e) {
             e.printStackTrace();
@@ -79,7 +94,20 @@ public class NemoFrameworkExecuteMethodUtils {
         }
 
         //开始调用方法
-        return NemoFrameworkExecuteMethodUtils.execute(route,request,response);
+        return execute(route,request,response);
+    }
+
+    /**
+     * 执行方法
+     * @param mappingMethod
+     * @param request
+     * @param response
+     * @param context
+     * @return
+     */
+    public static Object execute(MappingMethod mappingMethod, HttpServletRequest request, HttpServletResponse response, ServletContext context){
+        NemoContext.initContext(context,request,response);
+        return execute(mappingMethod,request,response);
     }
 
 }
