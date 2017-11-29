@@ -1,0 +1,25 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="framework-web:war exploded">
+    <output-path>$PROJECT_DIR$/framework-web/target/framework.web-1.0.0</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="framework-web" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="framework.core-1.0.0.jar">
+            <element id="module-output" name="framework-core" />
+          </element>
+          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
+          <element id="archive" name="framework.mvc-1.0.0.jar">
+            <element id="module-output" name="framework-mvc" />
+          </element>
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/framework-web/target/framework.web-1.0.0/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="framework-web/web/Web" />
+    </root>
+  </artifact>
+</component>

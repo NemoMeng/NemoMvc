@@ -6,19 +6,13 @@
 
     <groupId>com.nemo</groupId>
     <artifactId>framework</artifactId>
+    <packaging>pom</packaging>
     <version>1.0.0</version>
+    <modules>
+        <module>framework-core</module>
+        <module>framework-mvc</module>
+        <module>framework-web</module>
+    </modules>
 
-    <properties>
-        <jdk.version>1.8</jdk.version>
-    </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
-            <scope>provided</scope>
-        </dependency>
-    </dependencies>
 
 </project>
