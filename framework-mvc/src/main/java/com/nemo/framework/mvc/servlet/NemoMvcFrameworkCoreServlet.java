@@ -45,6 +45,7 @@ public class NemoMvcFrameworkCoreServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setAttribute("name","Nemo");
         if(filterSuffix(request)){
             super.doGet(request,response);
         }else {

@@ -84,11 +84,12 @@ public class NemoFrameworkParameterUtils {
                         @Override
                         public void visitLocalVariable(String name, String desc, String signature, Label start, Label end, int index) {
                             // 静态方法第一个参数就是方法的参数，如果是实例方法，第一个参数是this
-                            if (Modifier.isStatic(method.getModifiers())) {
-                                parameterNames[index] = name;
-                            }
-                            else if (index > 0) {
-                                parameterNames[index - 1] = name;
+                            if(index<=parameterNames.length) {
+                                if (Modifier.isStatic(method.getModifiers())) {
+                                    parameterNames[index] = name;
+                                } else if (index > 0) {
+                                    parameterNames[index - 1] = name;
+                                }
                             }
                         }
                     };

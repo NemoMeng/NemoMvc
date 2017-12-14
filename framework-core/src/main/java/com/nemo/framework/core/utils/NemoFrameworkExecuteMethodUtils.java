@@ -4,6 +4,8 @@
  */
 package com.nemo.framework.core.utils;
 
+import com.alibaba.fastjson.JSONObject;
+import com.nemo.framework.common.annotation.RespBody;
 import com.nemo.framework.common.enums.NemoFramworkMvcPropertiesNameEnums;
 import com.nemo.framework.common.utils.ReflectUtils;
 import com.nemo.framework.core.NemoFrameworkCore;
@@ -40,17 +42,21 @@ public class NemoFrameworkExecuteMethodUtils {
             }else {
                 Object[] parameters = NemoFrameworkParameterUtils.getParameters(request, response, obj , method);
                 //return method.invoke(obj, parameters);
-
-                request.setAttribute("name","Nemo");
-
                 Object object = ReflectUtils.invokeMehod(obj,method,parameters);
 
+                RespBody respBody = method.getAnnotation(RespBody.class);
+                if(respBody!=null){
+                    response.getWriter().write(JSONObject.toJSONString(object));
+                    return object;
+                }
+
+                if(object instanceof String) {
                     String path = "/" + NemoFrameworkPropertiesUtils.getProp(NemoFramworkMvcPropertiesNameEnums.FRAMEWORK_VIEW_PREFFIX.getValue())
-                            + File.separator+object.toString()
+                            + File.separator + object.toString()
                             + NemoFrameworkPropertiesUtils.getProp(NemoFramworkMvcPropertiesNameEnums.FRAMEWORK_VIEW_SUFFIX.getValue());
                     request.getRequestDispatcher(path).forward(request, response);
-
-                return path;
+                }
+                return object;
             }
         } catch (IllegalAccessException e) {
             e.printStackTrace();
