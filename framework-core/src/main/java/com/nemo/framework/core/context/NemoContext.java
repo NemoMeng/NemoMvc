@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
+ * 全局上下文对象，用来在访问中获取一些内容
  * Created by Nemo on 2017/11/29.
  */
 public class NemoContext {

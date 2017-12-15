@@ -13,7 +13,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="framework" target="1.5" />
-      <module name="framework-core" target="1.5" />
+      <module name="framework-core" target="1.8" />
       <module name="framework-mvc" target="1.5" />
       <module name="framework-web" target="1.5" />
       <module name="test" target="1.5" />

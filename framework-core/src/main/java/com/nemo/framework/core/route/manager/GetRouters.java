@@ -10,15 +10,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 路由管理器
+ * 所有Get方法的路由管理器
  * Created by Nemo on 2017/11/23.
  */
 public class GetRouters extends Routers {
 
     /**
-     * 路由列表
+     * 路由列表，key为路由访问路径，val为路由本身
      */
-    private static Map<String,RouteBean> routes = new HashMap<String,RouteBean>();
+    private Map<String,RouteBean> routes = new HashMap<String,RouteBean>();
 
     public Map<String, RouteBean> getRoutes() {
         return routes;

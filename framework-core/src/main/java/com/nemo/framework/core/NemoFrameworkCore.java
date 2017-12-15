@@ -20,7 +20,6 @@ import java.lang.reflect.Method;
 /**
  * 框架核心处理类，用来加载路由 + 配置 + 资源文件等一系列的处理
  * note:目前先处理路由
- * TODO 配置 + 资源文件等处理
  * Created by Nemo on 2017/11/23.
  */
 public class NemoFrameworkCore {
@@ -48,9 +47,6 @@ public class NemoFrameworkCore {
 
     public static NemoFrameworkCore core(){
         if(nemoFrameworkCore == null){
-            nemoFrameworkCore = new NemoFrameworkCore();
-        }
-        else{
             nemoFrameworkCore = new NemoFrameworkCore();
         }
         return nemoFrameworkCore;

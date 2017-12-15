@@ -40,23 +40,31 @@ public class NemoFrameworkExecuteMethodUtils {
             if(parameterTypes == null || parameterTypes.length<=0){
                 return method.invoke(obj);
             }else {
+
+                //获取参数
                 Object[] parameters = NemoFrameworkParameterUtils.getParameters(request, response, obj , method);
                 //return method.invoke(obj, parameters);
+
+                //调用方法
                 Object object = ReflectUtils.invokeMehod(obj,method,parameters);
 
+                //如果注解了RespBody，那么就直接把结果返回生成json返回
                 RespBody respBody = method.getAnnotation(RespBody.class);
                 if(respBody!=null){
+                    response.setCharacterEncoding("UTF-8");
+                    response.setContentType("application/json; charset=utf-8");
                     response.getWriter().write(JSONObject.toJSONString(object));
                     return object;
                 }
 
+                //如果是字符串的返回，那么就把它当作一个jsp的映射路径
                 if(object instanceof String) {
                     String path = "/" + NemoFrameworkPropertiesUtils.getProp(NemoFramworkMvcPropertiesNameEnums.FRAMEWORK_VIEW_PREFFIX.getValue())
                             + File.separator + object.toString()
                             + NemoFrameworkPropertiesUtils.getProp(NemoFramworkMvcPropertiesNameEnums.FRAMEWORK_VIEW_SUFFIX.getValue());
                     request.getRequestDispatcher(path).forward(request, response);
+                    return object;
                 }
-                return object;
             }
         } catch (IllegalAccessException e) {
             e.printStackTrace();

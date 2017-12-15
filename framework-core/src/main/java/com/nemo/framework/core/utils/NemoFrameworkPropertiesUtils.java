@@ -20,7 +20,8 @@ public class NemoFrameworkPropertiesUtils {
         Properties pps = new Properties();
         try {
             ClassLoader classLoader = NemoFrameworkPropertiesUtils.class.getClassLoader();
-            pps.load( classLoader.getResourceAsStream("nemo.framework.application.properties"));
+            //系统配置文件固定为这个
+            pps.load( classLoader.getResourceAsStream("nemo.framework.properties"));
         } catch (IOException e) {
             e.printStackTrace();
         }

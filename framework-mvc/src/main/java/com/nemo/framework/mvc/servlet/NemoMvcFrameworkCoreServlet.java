@@ -21,7 +21,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * 框架核心控制器，目前先拦截.html的请求
+ * 框架核心控制器
  * Created by Nemo on 2017/11/23.
  */
 @WebServlet(name="/",urlPatterns = "/",loadOnStartup=1)
@@ -45,7 +45,6 @@ public class NemoMvcFrameworkCoreServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.setAttribute("name","Nemo");
         if(filterSuffix(request)){
             super.doGet(request,response);
         }else {

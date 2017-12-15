@@ -4,6 +4,7 @@
  */
 package com.nemo.framework.core.utils;
 
+import com.nemo.framework.common.annotation.ReqBody;
 import jdk.internal.org.objectweb.asm.ClassReader;
 import jdk.internal.org.objectweb.asm.ClassVisitor;
 import jdk.internal.org.objectweb.asm.MethodVisitor;
@@ -17,6 +18,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
+import java.lang.reflect.Parameter;
 import java.util.Arrays;
 
 /**
@@ -39,10 +41,18 @@ public class NemoFrameworkParameterUtils {
             return null;
         }
 
+        Parameter[] parameters = method.getParameters();
+
         Object params[] = new Object[parameterNames.length];
         for(int i=0;i<parameterNames.length;i++){
-            String param = request.getParameter(parameterNames[i]);
-            params[i] = param;
+            ReqBody annotation = parameters[i].getAnnotation(ReqBody.class);
+            if(annotation!=null){   //请求体参数
+                Object attribute = request.getAttribute(parameterNames[i]);
+                params[i] = attribute;
+            }else {                 //地址栏参数
+                String param = request.getParameter(parameterNames[i]);
+                params[i] = param;
+            }
         }
 
         return params;

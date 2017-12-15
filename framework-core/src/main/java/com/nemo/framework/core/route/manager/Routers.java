@@ -13,15 +13,15 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 路由管理器
+ * 路由管理器基类，所有的路由管理器都需要继承自它
  * Created by Nemo on 2017/11/23.
  */
 public abstract class Routers {
 
     /**
-     * 路由列表
+     * 路由列表，key为路由访问路径，val为路由本身
      */
-    private static Map<String,RouteBean> routes = new HashMap<String,RouteBean>();
+    private Map<String,RouteBean> routes = new HashMap<String,RouteBean>();
 
     /**
      * 添加单个路由
@@ -85,11 +85,7 @@ public abstract class Routers {
         return routes.get(path);
     }
 
-    public Map<String, RouteBean> getRoutes() {
-        return routes;
-    }
+    public abstract Map<String, RouteBean> getRoutes();
 
-    public void setRoutes(Map<String, RouteBean> routes) {
-        this.routes = routes;
-    }
+    public abstract void setRoutes(Map<String, RouteBean> routes);
 }
