@@ -97,15 +97,15 @@ public class NemoFrameworkAnnotationUtils {
      * @param clss
      * @return
      */
-    public static Map<String,Method> getMapMethodsByClass(Class clss){
-        Map<String,Method> mappings = new HashMap<String,Method>();
+    public static List<Method> getMapMethodsByClass(Class clss){
+        List<Method> mappings = new ArrayList<>();
         //获取类的所有方法
         Method[] methods = clss.getMethods();
         for (Method method : methods) {
             //获取RequestMapping注解
             UrlMapping annotation = method.getAnnotation(UrlMapping.class);
             if (annotation != null) {
-                mappings.put(annotation.value(),method);
+                mappings.add(method);
             }
         }
         return mappings;

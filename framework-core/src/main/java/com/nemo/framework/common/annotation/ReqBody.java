@@ -1,5 +1,5 @@
 /* 
- * All rights Reserved, Designed By 农金圈
+ * All rights Reserved, Designed By 微迈科技
  * 2017/12/15 11:11
  */
 package com.nemo.framework.common.annotation;

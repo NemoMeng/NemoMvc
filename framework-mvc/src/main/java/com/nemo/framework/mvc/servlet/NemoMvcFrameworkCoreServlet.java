@@ -38,7 +38,12 @@ public class NemoMvcFrameworkCoreServlet extends HttpServlet {
             NemoFrameworkPropertiesUtils.loadProperties();
             //开始扫描包
             String basePackage = NemoFrameworkPropertiesUtils.getProp(NemoFramworkCorePropertiesNameEnums.SCAN_BASE_PACKAGE.getValue());
-            NemoFrameworkCorePackageScaner.scan(basePackage);
+            try {
+                NemoFrameworkCorePackageScaner.scan(basePackage);
+            } catch (Exception e) {
+                e.printStackTrace();
+                System.exit(-1);
+            }
             core.setInited(true);
         }
     }

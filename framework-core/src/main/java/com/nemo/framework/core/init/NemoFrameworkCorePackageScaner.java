@@ -26,7 +26,7 @@ public class NemoFrameworkCorePackageScaner {
      * 开始扫描指定包下面的所有注解为Controller的类及其下面全部注解为UrlMapping的方法
      * @param packageName
      */
-    public static void scan(String packageName){
+    public static void scan(String packageName) throws Exception {
         NemoFrameworkCore core = NemoFrameworkCore.core();
         if(!core.isInited()) {
             //得到所有的controller
@@ -34,11 +34,9 @@ public class NemoFrameworkCorePackageScaner {
             if (CollectionUtils.isNotEmpty(classList)) {
                 for (Object clss : classList) {
                     //所有controller下的mapping
-                    Map<String, Method> methods = NemoFrameworkAnnotationUtils.getMapMethodsByClass(clss.getClass());
-                    if (MapUtils.isNotEmpty(methods)) {
-                        for (Map.Entry<String, Method> entries : methods.entrySet()) {
-
-                            Method method = entries.getValue();
+                    List<Method> methods = NemoFrameworkAnnotationUtils.getMapMethodsByClass(clss.getClass());
+                    if (CollectionUtils.isNotEmpty(methods)) {
+                        for (Method method : methods) {
 
                             //根据controller + method上的注解得到完整的访问路径
                             String key = NemoFrameworkUrlUtils.getFullUrlByControllerAndMethodUrl(clss,method);
@@ -46,9 +44,8 @@ public class NemoFrameworkCorePackageScaner {
 
                             MappingMethod mappingMethod = method.getAnnotation(UrlMapping.class).method();
 
-                            //TODO 如果访问路由被重复定义，应该提醒下用户
                             if(core.getRouteByPathAndMappingMethod(key,mappingMethod) != null){
-
+                                throw new Exception("抱歉，有重复的controller+mapping定义。");
                             }
 
                             //添加到核心控制器中

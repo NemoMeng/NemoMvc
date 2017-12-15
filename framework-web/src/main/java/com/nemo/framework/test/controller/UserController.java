@@ -26,7 +26,7 @@ public class UserController {
         Map<String,Object> map = new HashMap<String,Object>();
         map.put("name",name);
         map.put("age",age);
+        map.put("friends",friends);
         return map;
     }
-
 }
