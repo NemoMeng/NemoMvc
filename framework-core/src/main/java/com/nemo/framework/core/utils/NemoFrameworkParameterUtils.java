@@ -4,6 +4,7 @@
  */
 package com.nemo.framework.core.utils;
 
+import com.alibaba.fastjson.JSONObject;
 import com.nemo.framework.common.annotation.ReqBody;
 import jdk.internal.org.objectweb.asm.ClassReader;
 import jdk.internal.org.objectweb.asm.ClassVisitor;
@@ -14,12 +15,18 @@ import jdk.internal.org.objectweb.asm.Label;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.lang.reflect.Parameter;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Enumeration;
+import java.util.List;
 
 /**
  * 框架中参数操作相关工具
@@ -43,19 +50,50 @@ public class NemoFrameworkParameterUtils {
 
         Parameter[] parameters = method.getParameters();
 
-        Object params[] = new Object[parameterNames.length];
+        Object[] params = new Object[parameterNames.length];
         for(int i=0;i<parameterNames.length;i++){
-            ReqBody annotation = parameters[i].getAnnotation(ReqBody.class);
-            if(annotation!=null){   //请求体参数
-                Object attribute = request.getAttribute(parameterNames[i]);
-                params[i] = attribute;
+            Parameter parameter = parameters[i];
+            String name = parameter.getName();
+            if(name.equals("javax.servlet.http.HttpServletRequest")){
+                params[i] = request;
+                continue;
+            }
+            if(name.equals("javax.servlet.http.HttpServletResponse")){
+                params[i] = response;
+            }
+
+            ReqBody annotation = parameters[i].getDeclaredAnnotation(ReqBody.class);
+            if(annotation!=null){   //请求体参数/json
+                Object param =getJsonAttribute(request,parameters[i].getType());
+                params[i] = param;
             }else {                 //地址栏参数
                 String param = request.getParameter(parameterNames[i]);
                 params[i] = param;
             }
         }
-
         return params;
+    }
+
+    /**
+     * 得到Json参数
+     * @param request
+     * @param cls
+     * @return
+     */
+    private static Object getJsonAttribute(HttpServletRequest request,Class cls){
+        try {
+            // 读取请求内容
+            BufferedReader br = new BufferedReader(new InputStreamReader(request.getInputStream(),"utf-8"));
+            String line;
+            StringBuilder sb = new StringBuilder();
+            while ((line = br.readLine()) != null) {
+                sb.append(line);
+            }
+            return JSONObject.parseObject(sb.toString(),cls);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     /**

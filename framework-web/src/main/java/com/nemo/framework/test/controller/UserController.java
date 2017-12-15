@@ -22,11 +22,10 @@ public class UserController {
 
     @UrlMapping(value = "get",method = MappingMethod.POST)
     @RespBody
-    public Map<String, Object> get(String name, Integer age, double iq, @ReqBody List<String> friends){
+    public Map<String, Object> get(String name, Integer age, @ReqBody List<String> friends){
         Map<String,Object> map = new HashMap<String,Object>();
         map.put("name",name);
         map.put("age",age);
-        map.put("IQ",iq);
         return map;
     }
 

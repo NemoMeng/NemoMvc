@@ -5,6 +5,7 @@
 package com.nemo.framework.common.utils;
 
 import java.lang.reflect.Method;
+import java.util.List;
 
 /**
  * 反射相关操作工具
@@ -33,7 +34,7 @@ public class ReflectUtils  {
      * @param args
      * @return
      */
-    public static Object invokeMehod(Object bean, Method method, Object... args) {
+    public static Object invokeMehod(Object bean, Method method,Object[] args) {
         try {
             Class<?>[] types = method.getParameterTypes();
             int argCount = args == null ? 0 : args.length;
