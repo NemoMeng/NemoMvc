@@ -35,10 +35,10 @@ public class NemoMvcFrameworkCoreServlet extends HttpServlet {
         NemoFrameworkCore core = NemoFrameworkCore.core();
         //如果还未完成初始化，那么则开始扫描包
         if(!core.isInited()){
-            NemoFrameworkPropertiesUtils.loadProperties();
-            //开始扫描包
-            String basePackage = NemoFrameworkPropertiesUtils.getProp(NemoFramworkCorePropertiesNameEnums.SCAN_BASE_PACKAGE.getValue());
             try {
+                NemoFrameworkPropertiesUtils.loadProperties();
+                //开始扫描包
+                String basePackage = NemoFrameworkPropertiesUtils.getProp(NemoFramworkCorePropertiesNameEnums.SCAN_BASE_PACKAGE.getValue());
                 NemoFrameworkCorePackageScaner.scan(basePackage);
             } catch (Exception e) {
                 e.printStackTrace();

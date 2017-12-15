@@ -29,4 +29,13 @@ public class UserController {
         map.put("friends",friends);
         return map;
     }
+
+    @UrlMapping(value = "test",method = MappingMethod.POST)
+    @RespBody
+    public Map<String,Object> test(String name, Integer age){
+        Map<String,Object> map = new HashMap<String,Object>();
+        map.put("name",name);
+        map.put("age",age);
+        return map;
+    }
 }

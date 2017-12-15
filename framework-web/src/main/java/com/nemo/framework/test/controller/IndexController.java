@@ -14,7 +14,7 @@ import com.nemo.framework.common.enums.MappingMethod;
 @Controller("index")
 public class IndexController {
 
-    @UrlMapping(value = "/aaa",method = MappingMethod.GET)
+    @UrlMapping(value = "/",method = MappingMethod.GET)
     public String index(String arg,Integer age){
         System.out.println("你得到了一个参数arg:" + arg);
         System.out.println("你得到了一个参数age:" + age);
